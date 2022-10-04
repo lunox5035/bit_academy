@@ -1,0 +1,28 @@
+a = [1,1,2,3,4,2,1,4,5,6,7,8,10]
+
+aset=set(a)
+print(aset)
+{1, 2, 3, 4, 5, 6, 7, 8, 10}
+
+2.
+a={"name": "park", "score": 70}
+b={"name": "kim" , "score": 80}
+c={"name": "park", "score": 50}
+
+a['score']>=80
+False
+b['score']>=80
+True
+c['score']>=80
+False
+
+
+print(a['name'],'는 점수가 80점 이상이',a['score']>=80)
+park 는 점수가 80점 이상이 False
+
+print(b['name'],'는 점수가 80점 이상이',b['score']>=80)
+kim 는 점수가 80점 이상이 True
+
+print(c['name'],'는 점수가 80점 이상이',c['score']>=80)
+park 는 점수가 80점 이상이 False
+

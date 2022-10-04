@@ -1,0 +1,32 @@
+# 제어문
+a=10
+b=10
+# print(f"a>b{a>b}")
+# :다음 줄 뛰어쓰기(tab) 필수
+
+str1=""
+if a>b:
+    #조건이 True면 아래 문장을 실행한다.
+    str1="크다"
+    print(f"a>b 크다")
+elif a<b:
+    #elif 위의 조건이 실행되지 않았으면 이 식을 검수한다.
+    str1="작다"
+    print(f"a>b 작다")
+else:
+    # 위 조건들(if,elif)이 모두 False면 실행
+    str1="같다"
+    print(f"a=b 같다")
+print ()
+
+
+c=[1,2,3,4,5]
+if len(c)>3:
+    print(c[3])
+
+if len(c)>2:
+    print(c[0])
+
+
+
+

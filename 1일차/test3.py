@@ -1,0 +1,2 @@
+d={"kim":50000,"park":30000}
+print("%s는 %s보다 %s 있습니다."%("kim","park",(d['kim']-d['park'])))

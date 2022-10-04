@@ -1,0 +1,14 @@
+# 2부터 20까지 짝수의 합
+
+suml=0
+for i in range(0,21,2):
+    suml+=i
+print(suml)
+
+
+
+
+
+
+
+

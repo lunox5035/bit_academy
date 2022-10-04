@@ -1,0 +1,97 @@
+list= [1,2,3,4,5,6,2,4,5,1]
+# 뭐는 짝수 입니다.
+# 뭐는 홀수입니다.
+
+# a=0
+# for i in range(0,len(list)):
+#     if list[a]%2==0:
+#         print("%d는 짝수입니다."%(list[a]))
+#     else:
+#         print("%d는 홀수입니다."%(list[a]))
+#     a+=1
+
+for i in range(0,len(list)):
+    if list[i]%2==0:
+        print("%d는 짝수입니다."%(list[i]))
+    else:
+        print("%d는 홀수입니다."%(list[i]))
+# continue 반복문 해당 루틴 종료시키고 다음 루틴 실행
+# break 반복문 종료
+
+# match case
+# match의 결과값이 case에 
+list1= [1,2,3,4,5,6,2,4,5,1]
+for el in list1:
+    match el % 2:
+        case 1:
+            print(f"{el}은 홀수다")
+        case 2:
+            print(f"{el}은 짝수다")
+
+
+x={"commpany":"카카오", "isPartTime":True}
+if x.get("commpany")=="카카오" :
+    print("대기업 직원이시네요.")
+elif x.get("commpany")=="네이버":
+    print("대기업 직원이시네요.")
+else:
+    print("중견기업 지원이시네요")
+
+match x.get("commpant"):
+    case"카카오":
+        print("대기업 직원이시네요.")
+    case"네이버":
+        print("대기업 직원이시네요.")
+    case _: # _ 어느 값이라도
+        print("중견기업 지원이시네요")
+
+# Q.
+# phone이 애플이면 와후, 갤럭시면 version을 보고 풀립이면 접히네요 아니면 좋네요
+
+phone={"name":"갤럭시", "version":"z플립4"}
+if phone.get("name")=="갤럭시":
+    if phone.get("version")=="z플립4":
+        print("접히네요")
+    else:
+        print("좋네요")
+elif phone.get("name")=="애플":
+    print("와후")
+
+# 만약 홀수면 2배 짝수면 그냥 합이 20이 넘으면 끝
+list0=[9,4,2,1,6,7,5,4,3,7]
+
+ll=[] #리스트 생성
+for i in range(0,len(list0)):
+    if list0[i]%2==0:
+        ll.append(list0[i])
+    else:
+        ll.append(list0[i]*2)
+print(ll)
+
+l0=0#합계 생성
+for i in range(0,len(list0)):
+    if list0[i]%2==1:
+        l0+=list0[i]*2
+    else:
+        l0+=list0[i] 
+    if l0>20:
+        break
+print(i)
+print(l0)
+print(list0)
+
+list1=["안","녕","하","세","요"]
+suml=""
+i=0
+while i<len(list1):
+    suml+=list1[i]
+    i+=1
+print(suml)
+
+suml=""
+for i in range(0,len(list1)):
+    suml+=list1[i]
+print(suml)
+
+
+

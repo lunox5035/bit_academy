@@ -1,0 +1,25 @@
+from traceback import print_tb
+
+
+tmpd={"name":"re","age":100}
+list5= [tmpd,tmpd,tmpd]
+list6= list(map(lambda el:el.copy(),list5))
+list7= list5.copy()
+
+print(list5)
+print(list6)
+print(list7)
+
+list5.append(1)
+print()
+print(list5)
+print(list6)
+print(list7)
+
+tmpd["age"]=10
+print()
+print(list5)
+print(list6)
+print(list7)
+
+

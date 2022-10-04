@@ -1,0 +1,44 @@
+# 람다 버전 3.6부터
+# 예제) list1의 요소를 *2해서 찍어봐라
+from functools import reduce
+from turtle import pensize
+
+
+list1= [1,2,3,4,5,6,2,3,5,1]
+list2=[]
+for i in range(0,len(list1)):
+    list2.append(list1[i]*2)
+print(list2)
+
+list4 = list(map(lambda x: x*2,list1)) # map 새로운 리스트 생성(반환한다.) lambda
+# list2=[] == list(map())   //
+print (list4)
+print()
+z=0
+for l in list1:
+    z+=l
+print(z)
+print()
+
+# z=0
+# z=int(lambda q:q+z,list1)
+# print(z)
+print()
+print(2)
+sum2=reduce(lambda x,y:x+y,list1)
+# 합계구할때 많이씀
+print(sum2)
+
+list1= [1,2,3,4,5,6,2,3,5,1]
+# 4이상인 것만 리스트 만들기
+l1=[]
+# 리스트 선언(생성)
+for i in list1:
+    # print (i)
+    # 조건문 4이상
+    if i>=4:
+        l1.append(i)
+print(l1)
+
+l2=list(filter(lambda x:x>=4,list1))#filter 조건 선언
+print(l2)

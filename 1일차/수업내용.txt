@@ -1,0 +1,20 @@
+문자열 포메팅(string) " """ ' ''' \n \t
+int(수) + - * ** %
+dictionary{key:value}
+	.get() 값추출
+list [] 순서가 있다 중복도 있다
+	.len() 길이 측정
+tuple () crud중 r만 가능
+set{} 중복제거 순서도 없고 중복도 없다
+	.sort() 정렬
+bool(boolean) true false
+
+
+
+CRUD
+Create
+Read
+Update
+Delete
+
+
