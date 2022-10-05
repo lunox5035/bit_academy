@@ -1,0 +1,110 @@
+#3,6,9게임
+#들어온 숫자에 3,6,9가 있으면"짝" 계속되야됨
+
+from re import T
+
+
+print("3,6,9 박수는 C로")
+# i=0
+# while True:
+#     i+=1
+#     num = input("현재", i)
+#     if num != int() or num == "C":
+#         print("젔습니다")
+#         break
+#     elif i%10==2 and num != "C" :
+#         print("젔습니다")
+#         break
+#     elif i%10=="4" and num != "C" :
+#         print("젔습니다")
+#         break
+#     elif i%10=="8" and num != "C" :
+#         print("젔습니다")
+#         break
+
+i=0
+num=0
+while True:
+    co=i+1
+    try:
+        i+=1
+        num=int(input(i))
+        if num != (i+1):
+            print("젔습니다")
+            break
+        elif co%10==3 or co%10==6 or  co%10==9:
+            if num =="C":
+                continue
+        elif co%30==0:
+
+            
+
+
+    except:
+        print("규칙을 지켜주세요")
+        break
+
+
+#정답
+i=0
+while True:
+    i+=1
+    myinput = input(f"현재값{i}")
+    answer = str(i+1)
+    for c in answer:
+        if c=="3" or c=="6" or c=="9": 
+            answer = "c"
+    if myinput==answer:
+        print("맞음")
+    else:
+        print("틀림")
+        break
+
+
+#game
+def game(cur,myinput):
+    #i=0
+    # while True:
+    #     i+=1
+        # myinput = input(f"현재값{i}")
+        answer = str(cur+1)
+        for c in str(cur+1):
+            if c=="3" or c=="6" or c=="9": 
+                answer = "c"
+        if myinput==answer:
+            print("맞음")
+            return False
+        else:
+            print("틀림")
+            return False
+
+i=0
+while True:
+    i+=1
+    myinput = input("현재{i}")
+    isWin = game(i, myinput)
+    if (not isWin):
+        break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

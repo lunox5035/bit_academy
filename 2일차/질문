@@ -11,22 +11,26 @@
 
 
 
-list0=[9,4,2,1,6,7,5,4,3,7]
+# list0=[9,4,2,1,6,7,5,4,3,7]
 
 
-ll=[]
-s=0
-i=0
-for i in range(0,len(list0)):
-    if list0[i]%2==0:
-        ll.append(list0[i])
-    else:
-        ll.append(list0[i]*2)
-while s>20:
-    s+=ll[i]
-    i+=1
-print(ll)
-print(list0)
+# ll=[]
+# s=0
+# i=0
+# for i in range(0,len(list0)):
+#     if list0[i]%2==0:
+#         ll.append(list0[i])
+#     else:
+#         ll.append(list0[i]*2)
+# while s>20:
+#     s+=ll[i]
+#     i+=1
+# print(ll)
+# print(list0)
+
+
+
+
 
 
 
