@@ -58,5 +58,12 @@ for line in lines:
 
 # tomorrow update & class
 
+fr=open("./123.txt",'r')
+lines=fr.readlines()
+for line in lines:
+    print(line) 
+
+
+
 
 
