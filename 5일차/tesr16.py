@@ -71,10 +71,26 @@
 #import random
 
 
-print(f"{}") #f=format
+#print(f"{}") #f=format
 
 
+from tkinter import Y
+from xml.dom.expatbuilder import FilterVisibilityController
 
 
+list1=[9,1,2,3]
+def sum(x,t):
+    print(f"{x}{y}")
+    return x+Y
+a=reduce(lambda x,y:sum(x,y,list1))
+
+user ={"id":"id","pass":"pass","name":""}
+
+names= ["kim","lee",'park']
+namelist=list(map(lambdax:{"name":x},name))
+print(namelist)
+
+findUser = list(fillter(lambda x : x.get("name")=="park",namelist))
+print(findUser)
 
 
